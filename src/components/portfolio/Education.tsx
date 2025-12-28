@@ -1,4 +1,4 @@
-import { GraduationCap, School } from "lucide-react";
+import { GraduationCap, School, BookOpen } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { AnimatedSection } from "./AnimatedSection";
 
@@ -19,6 +19,14 @@ const education = [
     grade: "90.33%",
     icon: School,
     description: "HSC Board",
+  },
+  {
+    degree: "Grade X (SSC)",
+    institution: "Mahatma Phule High-School, Nanded",
+    duration: "2019",
+    grade: "72.30%",
+    icon: BookOpen,
+    description: "SSC Board",
   },
 ];
 
