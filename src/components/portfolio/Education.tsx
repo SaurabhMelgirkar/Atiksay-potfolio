@@ -12,23 +12,6 @@ const education = [
     description:
       "Specialized in Python programming, Data Science, AI/ML, and IoT development. Participated in various hackathons and competitions.",
   },
-  {
-    degree: "Higher Secondary Certificate (HSC)",
-    institution: "Maharashtra State Board",
-    duration: "2020 - 2021",
-    grade: "90.33%",
-    icon: School,
-    description:
-      "Science stream with focus on Mathematics and Computer Science.",
-  },
-  {
-    degree: "Secondary School Certificate (SSC)",
-    institution: "Maharashtra State Board",
-    duration: "2018 - 2019",
-    grade: "72.30%",
-    icon: BookOpen,
-    description: "Completed secondary education with strong academic foundation.",
-  },
 ];
 
 export const Education = () => {
