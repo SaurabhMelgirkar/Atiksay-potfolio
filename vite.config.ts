@@ -4,8 +4,11 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig({
-  // ✅ ALWAYS use repo name for GitHub Pages
-  base: "/Atiksay-potfolio/",
+  // 🔥 IMPORTANT
+  // For LOCAL development use "/"
+  // Change to "/Atiksay-potfolio/" ONLY before GitHub Pages build
+   base: "/Atiksay-potfolio/"
+,
 
   server: {
     host: "::",
@@ -14,7 +17,7 @@ export default defineConfig({
 
   plugins: [
     react(),
-    componentTagger(), // optional, safe in prod
+    componentTagger(),
   ],
 
   resolve: {
