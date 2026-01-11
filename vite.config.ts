@@ -1,23 +1,19 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
-import { componentTagger } from "lovable-tagger";
 
 export default defineConfig({
-  // 🔥 IMPORTANT
-  // For LOCAL development use "/"
-  // Change to "/Atiksay-potfolio/" ONLY before GitHub Pages build
-   base: "/Atiksay-potfolio/"
-,
+  base: process.env.NODE_ENV === "production"
+    ? "/Atiksay-potfolio/"
+    : "/",
 
   server: {
-    host: "::",
-    port: 8080,
+    host: "localhost",
+    port: 5173,
   },
 
   plugins: [
     react(),
-    componentTagger(),
   ],
 
   resolve: {
